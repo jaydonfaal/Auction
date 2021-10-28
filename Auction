@@ -1,0 +1,17 @@
+All Auction Items must be valued at at least 1 matic
+	-Items can be anything jpeg, bank codes, credit card #s, etc as long as the file is under 2GB
+	-The wallet address of the winner will be posted publicly
+The Auction page will load 30 results on a single screen
+	-no more than 30 auction items can exist at one time
+	-past auctions items + buyers will be in a horizontal scroll bar at the bottom of the screen(past 20)
+Clicking on an auction Item will open a new tab with all its information as well as a bid button
+Must link wallet to website using metamask or portis
+User will receive their item on a flash drive via amazon drone
+All buyer addresses are stored forever
+Auction considered completed after 5 confirmation on the blockchain
+Once program is launched everyone has same access
+	-there are no admins that can edit the code
+		-if there is a bug that's just unfortunate.
+Auction site takes 4% of the payment as a fee, must be be paid by the seller in doge coin
+When there have been more than 200 auctions, if more than 60% of previous buyers vote to shut down the site, the fees collected will be split between every past buyer
+	-button will appear in top left of the screen upon 200 auctions being completed.
