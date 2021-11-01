@@ -6,27 +6,23 @@
 1.5) Linking wallet easily implemented
 
 2) Storing past winners
-  - HashMap pastAuctions stores past 20 < auction item, winnerAddress >
+  - HashMap pastAuctions stores past 20 < Auction, winnerAddress >
   - ArrayList winnerList stores all wallet addresses of past winners (buyer addresses) forever
   
 3) Auction creation
   - Button to create auction on webpage listing all 30 auctions
-  - adds new AuctionItem storing to array AuctionItem[] which stores 30 auctions, error thrown if a 31st added
-  - Auction items have webpage, item, bidding system (ends at 5 blockchain confirms)
+  - adds new Auction storing to array Auction[] which stores 30 auctions, error thrown if a 31st added
+  - for Auction class, see 3.5
   - (amazon drone function)
+  
+3.5) Auction class
+  - String webpageLink, Object NFT, double startPrice, int confirmCounter, user auctionHolder
+  - throw error if NFT > 2 GB or startPrice > 1 matic
  
 4) Site shut-down system
   - if winnerlist exceeds 200, unhide vote Button
 
 Objects
   NFT, ArrayList, Hashmap, AuctionItem, String winnerAddress, boolean shutDown
-
-Variables
-  ArrayList winnerList stores all wallet addresses of past winners
-  HashMap pastAuctions stores past 20 < auction item, winnerAddress >
-  
-  
-AuctionItem has
-  webpage displaying winnerAddress, NFT
  
 -Justin has negative 12 credit
