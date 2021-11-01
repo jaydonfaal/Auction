@@ -1,9 +1,10 @@
+0.5) User class
+- wallet link, String buyer address, credit
+
 1) Auction Items
   - easily implemented
   - double fileSize must be less than 2 GB, or else size limit error thrown
   - double maticValue must be larger than 1, or else price limit error thrown
-  
-1.5) Linking wallet easily implemented
 
 2) Storing past winners
   - HashMap pastAuctions stores past 20 < Auction, winnerAddress >
@@ -13,11 +14,15 @@
   - Button to create auction on webpage listing all 30 auctions
   - adds new Auction storing to array Auction[] which stores 30 auctions, error thrown if a 31st added
   - for Auction class, see 3.5
-  - (amazon drone function)
   
 3.5) Auction class
-  - String webpageLink, Object NFT, double startPrice, int confirmCounter, user auctionHolder
+  - String webpageLink, Object NFT, double startPrice, double endPrice, int confirmCounter, user auctionHolder, boolean open
   - throw error if NFT > 2 GB or startPrice > 1 matic
+  - (amazon drone function)
+  - once confirmCounter > 5, boolean open = false
+  - Bidding
+    - while loop when boolean is open
+    - users can bid, renewing double endPrice for each bid (check if they have the funds)
  
 4) Site shut-down system
   - if winnerlist exceeds 200, unhide vote Button
