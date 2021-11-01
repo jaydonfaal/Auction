@@ -1,0 +1,32 @@
+1) Auction Items
+  - easily implemented
+  - double fileSize must be less than 2 GB, or else size limit error thrown
+  - double maticValue must be larger than 1, or else price limit error thrown
+  
+1.5) Linking wallet easily implemented
+
+2) Storing past winners
+  - HashMap pastAuctions stores past 20 < auction item, winnerAddress >
+  - ArrayList winnerList stores all wallet addresses of past winners (buyer addresses) forever
+  
+3) Auction creation
+  - Button to create auction on webpage listing all 30 auctions
+  - adds new AuctionItem storing to array AuctionItem[] which stores 30 auctions, error thrown if a 31st added
+  - Auction items have webpage, item, bidding system (ends at 5 blockchain confirms)
+  - (amazon drone function)
+ 
+4) Site shut-down system
+  - if winnerlist exceeds 200, unhide vote Button
+
+Objects
+  NFT, ArrayList, Hashmap, AuctionItem, String winnerAddress, boolean shutDown
+
+Variables
+  ArrayList winnerList stores all wallet addresses of past winners
+  HashMap pastAuctions stores past 20 < auction item, winnerAddress >
+  
+  
+AuctionItem has
+  webpage displaying winnerAddress, NFT
+ 
+-Justin has negative 12 credit
